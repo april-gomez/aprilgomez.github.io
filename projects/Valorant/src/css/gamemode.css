@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+--blue:#f64050;
+--black:#333;
+--white:#fff;
+--light-color:#666;
+--light-bg:#eee;
+--border:.2rem solid rgba(0,0,0,.1);
+--box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+font-family: 'Poppins', sans-serif;
+margin:0; padding:0;
+box-sizing: border-box;
+outline: none; border:none;
+text-decoration: none !important;
+text-transform: capitalize;
+}
+
+
+html{
+font-size: 62.5%;
+overflow-x: hidden;
+scroll-behavior: smooth;
+scroll-padding-top: 6.5rem;
+}
+
+section{
+padding:6rem 15rem;
+}
+
+.link-btn {
+    display: inline-block;
+    padding:1rem 3rem;
+    border-radius: .5rem;
+    background-color: var(--blue);
+    cursor: pointer;
+    font-size: 1.7rem;
+    color:var(--white);
+}
+
+.link-btn:hover {
+    background-color: white;
+    color:#f64050;
+}
+
+.heading {
+    font-size: 4rem;
+    color:var(--black);
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+
+.header{
+padding:1rem;
+border-bottom: var(--border);
+}
+
+.header .nav a{
+margin:0 1rem;
+font-size: 1.7rem;
+color:black;
+}
+
+.header .nav a:hover{
+color:#f64050;
+}
+
+
+section:not(.footer){
+   padding:20px;
+   margin-left: 200px;
+   margin-right: 200px;
+}
+
+#valo1 {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 66.5%; 
+}
+
+#dm {
+   width: 33%;
+   height: auto;
+}
+
+body {
+    background-color: #ece7e1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+h6 {
+   text-align: center;
+   font-size: 60px;
+}
+
+h1 {
+   font-size: 48px;
+}
+
+h3 {
+   font-size: 24px;
+}
+
+h4 {
+   font-size: 18px;
+}
+
+p {
+   font-size: 14px;
+}
+
+li {
+   font-size: 16px;
+}
+
+h5 {
+   font-size: 40px;
+}
+
+.guide {
+   text-align: center;
+}
+
+.footer {
+   background-color: #ffffff;
+ }
+ 
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:3rem;
+}
+ 
+.footer .box-container .box{
+    text-align: center;
+}
+ 
+.footer .box-container .box h3{
+    font-size: 2rem;
+    margin:2rem 0;
+    color:var(--black);
+}
+ 
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color:var(--light-color);
+    text-transform: none;
+}
+
+.footer{
+   padding: 20px;
+}
