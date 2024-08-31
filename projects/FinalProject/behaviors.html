@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width=device-width,initial-scale=1">
+		<title> Behavior of Cats </title>
+		
+		<link href = "external.css" type = "text/css" rel = "stylesheet">
+	</head>
+
+	<body>
+			
+		<div id = "block">
+			
+			<header> 
+				<p class = "links"> <a href="main.html"> Cats </a> | <a href="behaviors.html"> Behaviors </a> </p>
+			</header>
+			
+			<div id = "container">
+				
+				<div id = "first">
+					
+					<p class = "maininfo"> Breed of Cats: </p>
+				
+					<nav>
+						<ul class = "list">
+							<li> <img src = "image/paws.png"> </img> <a href = "#Siamese" > Siamese </a> <img src = "image/paws.png"> </img> </li> 
+							<li> <img src = "image/paws.png"> </img> <a href = "#Burmese" > Burmese </a> <img src = "image/paws.png"> </img> </li>
+							<li> <img src = "image/paws.png"> </img> <a href = "#Savannah" > Savannah Cat </a> <img src = "image/paws.png"> </img> </li>
+							<li> <img src = "image/paws.png"> </img> <a href = "#Egyptian" > Egyptian Mau </a> <img src = "image/paws.png"> </img> </li>
+							<li> <img src = "image/paws.png"> </img> <a href = "#Ragdoll" > Ragdoll </a> <img src = "image/paws.png"> </img> </li>
+							<li> <img src = "image/paws.png"> </img> <a href = "#Balinese" > Balinese </a> <img src = "image/paws.png"> </img> </li>
+							<li> <img src = "image/paws.png"> </img> <a href = "#Russian" > Russian Blue </a> <img src = "image/paws.png"> </img> </li>
+							<li> <img src = "image/paws.png"> </img> <a href = "#Bombay" > Bombay </a> <img src = "image/paws.png"> </img> </li>
+							<li> <img src = "image/paws.png"> </img> <a href = "#American" > American Shorthair </a> <img src = "image/paws.png"> </img> </li>
+							<li> <img src = "image/paws.png"> </img> <a href = "#Sphynx" > Sphynx </a> <img src = "image/paws.png"> </img> </li>
+						</ul>
+					</nav>
+				
+				</div>
+			
+				<aside>
+					<!-- Third Column -->
+					<p class = "maininfo"> Cats Breed and their Lifespan:  </p>
+					
+					<table class = "centertable" style = "box-shadow: 10px 10px 8px #866255">
+						<tr>
+							<th> Cat Breed </th>
+							<th> Life Span </th>
+						</tr>
+						<tr>
+							<td class = "cap"> Siamese</td>
+							<td> 12 to 20 years </td>
+						</tr>
+						<tr>
+							<td class = "cap"> Burmese </td>
+							<td> 16 to 18 years </td>
+						</tr>
+						<tr>
+							<td class = "cap"> Savannah Cat </td>
+							<td> 12 to 20 years </td>
+						</tr>
+						<tr>
+							<td class = "cap"> Egyptian Mau </td>
+							<td> 12 to 15 years </td>
+						</tr>
+						<tr>
+							<td class = "cap"> Ragdoll</td>
+							<td> 15+ years </td>
+						</tr>
+						<tr>
+							<td class = "cap"> Balinese </td>
+							<td> 12 to 20 years </td>
+						</tr>
+						<tr>
+							<td class = "cap"> Russian Blue </td>
+							<td> 15 to 20 years </td>
+						</tr>
+						<tr>
+							<td class = "cap"> Bombay </td>
+							<td> 12 to 16 years </td>
+						</tr>
+						<tr>
+							<td class = "cap"> American Shorthair </td>
+							<td> 15 to 20 years </td>
+						</tr>
+						<tr>
+							<td class = "cap"> Sphynx </td>
+							<td> 10 to 15 years </td>
+						</tr>
+					</table>
+					
+				</aside>
+				
+				<section id = "main">
+					<!-- Second Column -->
+					<h1 style = "font-size: 400%"> BEHAVIORS </h1>
+					<h4> of different cat breeds </h4>
+					
+					<h4 class = "greet"> Actually, only those breeds with 10 longest life span. <br> <br>
+						Please understand that I can only fit 10 for now, but these breeds
+						are also well-known. If you can't find the breed you want in here, please write down
+						the type of breed on the text box below. I'll add them on my next website update! </h4>
+					
+					<div id = "form">
+						<p class = "enter"> <b> Enter the cat breed you want to know about more! </b> </p>
+						
+						<form method = "POST" action = "breed.html">
+							<label for = "breed"> Cat's Breed: </label>  <br>
+							<input type = "text" id = "breed" name = "breed"> <br> <br>
+							
+							<div class = "center">
+								<button onclick = "myFunction()" class ="buttons"> Submit </button>
+							</div>
+							
+						</form>
+						<br>
+					</div> <!-- end of form -->
+					<br> <br>
+				
+				</section>
+			
+			</div>
+			
+			<div id = "pictures">
+				
+				<div class="slide-show">
+					<div class="slide">
+						<img src="image/cats5.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="image/cats6.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="image/cats7.jpg" alt="">
+					</div>
+					<div class="slide">
+						<img src="image/cats8.jpg" alt="">
+					</div>
+					
+				<script>
+					let slideIndex = 0;
+					showSlides();
+
+					function showSlides() {
+						const slides = document.querySelectorAll(".slide");
+						slides.forEach((slide, index) => {
+							slide.style.display = "none";
+						});
+						slideIndex++;
+						if (slideIndex > slides.length) {slideIndex = 1}    
+						slides[slideIndex-1].style.display = "block";  
+						setTimeout(showSlides, 5000); 
+					}
+				</script>
+				
+				</div> <br> <br>
+			
+			</div> 
+			
+			<div id = "breeds">
+				
+				<div id = "description">
+					
+					<nav>
+						<ul>
+							<li id = "Siamese"> Siamese - The Siamese cat's personality is friendly, affectionate, outgoing, and social. 
+								This beautiful breed is also one of the most intelligent around. The Siamese is loving and trusting with humans, 
+								and he thrives with lots of positive human interaction. </li>
+							<li id = "Burmese"> Burmese - The Burmese is highly intelligent, affectionate and extremely 
+								loyal. They love being with people, but also gets along well with other cats and even dogs. 
+								One of their most endearing qualities is that they love to perform tricks.</li>
+							<li id = "Savannah"> Savannah Cat - The Savannah Cat's personality is playful, adventurous and 
+								loyal. Unlike most cats, she loves to play in water and can even be trained to walk on a leash
+								and play fetch. Don't be fooled by her dog-like personality, though.</li>
+							<li id = "Egyptian"> Egyptian Mau - Egyptian Maus tend to be affectionate and friendly with 
+								everyone, but they will likely select one member of their family to spoil with extra attention. 
+								These bold, curious kitties love to engage in playtime and will impress you with their athletic 
+								abilities and lightning-fast reflexes.</li>
+							<li id = "Ragdoll"> Ragdoll - Ragdoll cats are known to be gentle, calm and sociable. 
+								Affectionate without being demanding, Ragdolls have an almost dog-like devotion to their owners. 
+								Some people also say they are attuned to emotional needs, a characteristic that makes them a perfect 
+								companion animal.</li>
+							<li id = "Balinese"> Balinese - The Balinese is generally a very active, intelligent, affectionate and 
+								particularly social, medium-sized cat. They enjoy playing and are very curious, so it is important that 
+								you have lots of toys, scratching posts and enrichment ideas ready to keep them entertained and stimulated.</li>
+							<li id = "Russian"> Russian Blue - Russian Blue cats are curious but calm, affectionate but not clingy, 
+								and very smart. They can be shy at first, but they are playful and loving once they feel comfortable. 
+								While they are happy living with families and even other pets, Russian Blue cats tend to form a deep 
+								connection with only one person.</li>
+							<li id = "Bombay"> Bombay - The Bombay cat personality can easily be classified as extroverted, these 
+								are social cats who like to make their presence known. Not only will these cats follow you around the house 
+								like your shadow, but they also enjoy talking to whoever is near and willing to listen.</li>
+							<li id = "American"> American Shorthair - The American Shorthair is a very pleasant companion cat. She is 
+								easy going and placid. The American is a loving cat and will attach herself to all members of the family. 
+								While the American loves to play, she doesn't need hourly attention.</li>
+							<li id = "Sphynx"> Sphynx - Sphynx Cat Breed Information and Personality Traits. Notable for its hairless coat, 
+								the sphynx is also a friendly, loving, and energetic show-off who craves human attention. In contrast to her regal 
+								looks and serious expression, the sphynx is an acrobatic clown who doesn't take herself too seriously.</li>
+						</ul>
+					</nav>
+					
+				</div>
+				
+			</div>
+			
+			<div id = "catimage">
+				
+				<div class="slideshow-container">
+					<h1 style="border: 5px groove #C0D6B9; font-size: 300%; border-radius: 10px; box-shadow:10px 10px 10px #866255"> What the Cat Breed looks like </h1>
+					<div class="mySlides fade">
+						<div class="numbertext">1 / 10</div>
+						<img src="image/siamese.png" style="width:100%">
+						<div class="text">Siamese Breed</div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 10</div>
+						<img src="image/burmese.png" style="width:100%">
+						<div class="text">Burmese Breed</div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">3 / 10</div>
+						<img src="image/savannah.png" style="width:100%">
+						<div class="text">Savannah Cat Breed</div>
+					</div>
+				  
+					<div class="mySlides fade">
+						<div class="numbertext">4 / 10</div>
+						<img src="image/egyptian.png" style="width:100%">
+						<div class="text">Egyptian Mau Breed</div>
+					</div>
+					
+					<div class="mySlides fade">
+						<div class="numbertext">5 / 10</div>
+						<img src="image/ragdoll.png" style="width:100%">
+						<div class="text">Ragdoll Breed</div>
+					</div>
+					
+					<div class="mySlides fade">
+						<div class="numbertext">6 / 10</div>
+						<img src="image/balinese.png" style="width:100%">
+						<div class="text">Balinese Breed</div>
+					</div>
+				  
+					<div class="mySlides fade">
+						<div class="numbertext">7 / 10</div>
+						<img src="image/russian.png" style="width:100%">
+						<div class="text">Russian Blue Breed</div>
+					</div>
+					
+					<div class="mySlides fade">
+						<div class="numbertext">8 / 10</div>
+						<img src="image/bombay.png" style="width:100%">
+						<div class="text">Bombay Breed</div>
+					</div>
+				  
+					<div class="mySlides fade">
+						<div class="numbertext">9 / 10</div>
+						<img src="image/american.png" style="width:100%">
+						<div class="text"> American Shorthair Breed</div>
+					</div>
+				  
+					<div class="mySlides fade">
+						<div class="numbertext">10 / 10</div>
+						<img src="image/sphynx.png" style="width:100%">
+						<div class="text"> Sphynx Breed</div>
+					</div>
+					
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+					<br>
+					
+					<div style="text-align:center">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+						<span class="dot" onclick="currentSlide(5)"></span>
+						<span class="dot" onclick="currentSlide(6)"></span>
+						<span class="dot" onclick="currentSlide(7)"></span>
+						<span class="dot" onclick="currentSlide(8)"></span>
+						<span class="dot" onclick="currentSlide(9)"></span>
+						<span class="dot" onclick="currentSlide(10)"></span>
+					</div>
+					
+					<script>
+						let slideIndex2 = 1;
+						showSlides2(slideIndex2);
+							function plusSlides(n) {
+							showSlides2(slideIndex2 += n);
+							}
+
+						function currentSlide(n) {
+							showSlides(slideIndex2 = n);
+							}
+
+						function showSlides2(n) {
+							let i;
+							let slides2 = document.getElementsByClassName("mySlides");
+							let dots = document.getElementsByClassName("dot");
+							if (n > slides2.length) {slideIndex2 = 1}    
+							if (n < 1) {slideIndex2 = slides2.length}
+							for (i = 0; i < slides2.length; i++) {
+							slides2[i].style.display = "none";  
+							}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+							}
+						slides2[slideIndex2-1].style.display = "block";  
+							dots[slideIndex2-1].className += " active";
+							}
+					</script>
+					
+			</div>
+			
+			<footer> Have a good day ahead! <br> created by: April Joyce Z. Gomez - a cat lover at heart, at brain, and everywhere else. </footer>
+		
+		</div>
+	
+	</body>
+
+</html>

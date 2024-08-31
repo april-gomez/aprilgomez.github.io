@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+	<head>
+		<meta charset = "UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name = "viewport" content = "width=device-width,initial-scale=1">
+		<title> Cat Server </title>
+		
+		<link href = "external.css" rel = "stylesheet" type = "text/css">
+		
+	</head>
+	
+	<body>
+		<div id = "block">
+		
+			<header>
+				<p class = "links"> <a href="main.html"> Cats </a> | <a href="behaviors.html"> Behaviors </a> </p>
+			</header>
+			
+			<div id = "container">
+				<div id = "first">
+					<!-- first column -->
+					<img src = "image/cats.png" class = "first"> </img>
+					<br> <br>
+					<p class = "maininfo"> INFORMATION ABOUT CATS </p>
+					<p class = "info"> Cat is a domestic species of small carnivours mammal. It is the only domesticated
+						species in the family Felidae and is commonly reffered to as the domestic cat or house cat
+						to distinguish it from the wile members of the family. </p>
+					<p class = "info"> The cat is similar in anatomy to the other felid species: it has a strong flexible body,
+						quick reflexes, sharp teeth, and retractable claws adapted to killing small prey. Its night
+						vision and sense of smell are well developed. Cat communication includes vocalization like
+						meowing, purring, trilling, hissing, growling, and grunting as well as cat-specified body language. </p>
+					<p class = "info"> Cats are among the most highly specialized of the flesh-eating mammals. Their brains
+						are large and well developed. Cats are digitigrade; that is, they walk on their toes. Unlike the dog
+						and horse, the cat walks or runs by moving first the front and back legs on one side, then the front
+						and back legs on the other side; only the camel and the giraffe moves in a similar way. <p>
+				</div> <!-- end of first -->
+				
+				<aside>
+					<!-- third column -->
+					
+					<p class = "maininfo"> TRIVIAS ABOUT CATS </p>
+					
+					<p class = "questions"> At which age do cats become fertile? </p>
+					<div class = "center">
+						<button onclick = "myFunction()" class ="buttons"> Answer</button>
+					</div>
+					<br>
+					<div id = "myDiv"> </div>
+					
+					<script>
+					function myFunction() {
+						var x = document.getElementById("myDiv");
+						if (x.innerHTML == "") {
+							x.innerHTML = "Female cats become fertile between 5 and 7 months of age while male cats become fertile at about 6 months of age";
+						} else {
+							x.innerHTML = "";
+						}
+					}
+					
+					</script>
+					<p class = "questions"> Are cats able to swim? </p>
+					<div class = "center">
+						<button onclick = "myFunction1()" class ="buttons"> Answer </button>
+					</div>
+					<br>
+					<div id = "myDiv1"> </div>
+					
+					<script>
+					function myFunction1() {
+						var x = document.getElementById("myDiv1");
+						if (x.innerHTML == "") {
+							x.innerHTML = "Cats hate water and attempt to avoid it, although some of them are able to swim if necessary.";
+						} else {
+							x.innerHTML = "";
+						}
+					}
+					</script>
+					
+					<p class = "questions"> How many human years are in one cat year of life? </p>
+					<div class = "center">
+						<button onclick = "myFunction2()" class ="buttons"> Answer </button>
+					</div>
+					<br>
+					<div id = "myDiv2"> </div>
+					
+					<script>
+					function myFunction2() {
+						var x = document.getElementById("myDiv2");
+						if (x.innerHTML == "") {
+							x.innerHTML = "One year of a cat's life equals 7 human years.";
+						} else {
+							x.innerHTML = "";
+						}
+					}
+					</script>
+					
+					<p class = "questions"> How long do cats typically sleeps for a day? </p>
+					<div class = "center">
+						<button onclick = "myFunction3()" class ="buttons"> Answer </button>
+					</div>
+					<br>
+					<div id = "myDiv3"> </div>
+					
+					<script>
+					function myFunction3() {
+						var x = document.getElementById("myDiv3");
+						if (x.innerHTML == "") {
+							x.innerHTML = "Cats do typically sleep for 12 to 16 hours a day!";
+						} else {
+							x.innerHTML = "";
+						}
+					}
+					</script>
+					
+					<img src = "image/cats1.png" class = "second"> </img>
+				</aside>
+				
+				<section id = "main">
+					<!-- second column --> 
+					<h1> CATS </h1>
+					<h4> and how to live with them </h4>
+					<h4 class = "greet"> Greetings! Welcome to your favorite cat server where
+						you will learn more about your lovely cats. <br> <br>
+						From learning about their different behaviors, to what will
+						suit their type of breed best. <br> <br>
+						To start off, let us know about you and your cat even just simply with
+						your names! Let us share our love for our cat together and discover
+						new things about them! <br>
+						</h4>
+					<div id = "form">
+						<p class = "enter"> <b> Please enter your name and your cat's name <br>
+							so we can address you better! </b> </p>
+						
+						<form method = "POST" action = "livingwithcats.html">
+							<div class = "forms">
+								<label for = "ownname"> Owner's name: </label> 
+								<input type = "text" id = "ownname" name = "ownname"> <br> <br>
+								
+								<label for = "catsname"> Cat's Name: </label>
+								<input type = "text" id = "catsname" name = "catsname"> <br> <br>
+							</div>
+							
+							<div class = "center">
+								<button type = "submit" class ="buttons"> Submit </button>
+							</div>
+						</form>
+						
+						<br>
+					</div> <!-- end of form -->
+					<br>
+				</section>
+				
+				<footer> Have a good day ahead! <br> created by: April Joyce Z. Gomez - a cat lover at heart, at brain, and everywhere else. </footer>
+				
+			</div> <!-- end of container -->
+			
+		</div>	<!-- end of block -->
+	</body>
+
+</html>

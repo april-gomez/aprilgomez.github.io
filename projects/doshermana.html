@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dos Hermana</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            width: 100vw;
+            height: 100vh;
+            gap: 10px;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .image-box {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .description {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            color: #ffffff;
+            font-size: 16px;
+            box-sizing: border-box;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" style="position: absolute; top: 10px; right: 10px; font-size: 24px; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background-color: #333; color: #ffffff; text-decoration: none; border-radius: 50%; cursor: pointer; z-index: 1000; line-height: 36px;">×</a>
+    <div class="container">
+        <div class="image-box">
+            <img src="../assets/img/april/doshermana.png" alt="Image 1">
+            <div class="description">Dos Hermana Shop Home Page</div>
+        </div>
+        <div class="image-box">
+            <img src="../assets/img/april/doshermana-2.png" alt="Image 2">
+            <div class="description">Blogs related with coffee</div>
+        </div>
+        <div class="image-box">
+            <img src="../assets/img/april/doshermana-1.png" alt="Image 3">
+            <div class="description">Check our coffee for sale</div>
+        </div>
+        <div class="image-box">
+            <img src="../assets/img/april/doshermana-4.png" alt="Image 4">
+            <div class="description">Blogs and research about coffee</div>
+        </div>
+    </div>
+</body>
+</html>
